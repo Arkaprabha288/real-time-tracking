@@ -1,0 +1,10 @@
+{
+  "name": "real-time-tracking",
+  "version": "1.0.0",
+  "description": "Consent-based real-time location tracking demo for delivery use-cases",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}
