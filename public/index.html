@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery Tracking Dashboard</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <h1>Create a tracking link</h1>
+        <p class="muted">Generate a consent-based link for your delivery partner or customer.</p>
+        <button id="create-link">Generate tracking link</button>
+        <label>
+          Share this URL
+          <input id="tracking-link" type="text" readonly placeholder="Link appears here" />
+        </label>
+      </section>
+
+      <section class="card">
+        <h2>Real-time location</h2>
+        <p id="status" class="muted">Generate a link to start receiving location updates.</p>
+        <p id="coords" class="coords">No coordinates yet.</p>
+      </section>
+
+      <section class="card notice">
+        <strong>Privacy note:</strong> browser links can send live location only while the page is open and user consent is active.
+        For "track after close", use a signed-in courier app with explicit background location permission.
+      </section>
+    </main>
+
+    <script src="/dashboard.js"></script>
+  </body>
+</html>
